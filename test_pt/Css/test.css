@@ -1,0 +1,48 @@
+body{
+	margin:0;
+    padding:0;
+    background-color: aliceblue;
+}
+.test1{
+    /* float: left; */
+    position: absolute;
+    background-color: rgb(32, 72, 190);
+    width: 100%;
+    font-size: 35px;
+}
+.test2{
+    position: relative;
+    float: left;
+    background-color: dimgray;
+    font-size: 30px;
+    width: 100px;
+    height: 922px;
+    margin-top: 40px;
+}
+.test1 .head {
+    	/* display: block; 设置为块元素 */
+    display: block;
+    /* text-decoration: none;链接不显示下划线 */
+    text-decoration: none;
+	height: 40px;
+	line-height: 40px;
+	/* text-align: center; 文本居中 */
+	text-align: center;
+    width: 120px;
+    background-color: rgb(86, 135, 233);
+    margin-left: 100px;
+    font: bold;
+}
+.xiaoxi a{
+    position: relative;
+    text-decoration: none;
+    float: right;
+    font-size: 10px;
+    color: azure;
+    text-align: center;
+}
+.xiaoxi a:hover{
+    /* background-color: aliceblue; */
+    color: aqua;
+
+}
