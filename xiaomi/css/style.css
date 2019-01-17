@@ -3,6 +3,7 @@ body{
 	padding:0;
 }
 body{
+	height: 2500px;
 	float:14px/1.5 "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-serif;
 }
 a{
@@ -38,7 +39,53 @@ a{
 	float: left;
 	height: 40px;
 	line-height: 40px;
+	font-size: 0px;
 }
-.topbar-info, .topbar-cart{
+.topbar-nav span{
+	font-size: 12px;
+	color: #424242;
+	font-family: sans-serif;
+	margin: 0.5em;
+}
+.topbar-info,.topbar-cart{
 	float: right;
+}
+
+.topbar-cart a{
+	/* display: block; 设置为块元素 */
+	display: block;
+	height: 40px;
+	line-height: 40px;
+	/* text-align: center; 文本居中 */
+	text-align: center;
+	width: 120px;
+	background-color: #424242;
+}
+.topbar-cart a:hover{
+	background-color: #fff;
+	color: #ff6700;
+}
+.topbar-cart span{
+	margin-left: -4px;
+	font-size: 12px;
+}
+.topbar-info{
+	margin-right: 15px;
+}
+.topbar-info a{
+	float: left;
+	padding: 0 5px;
+	line-height: 40px;
+	height: 40px;
+}
+.topbar-info span{
+	float: left;
+	font-family: sans-serif;
+	font-size: 12px;
+	color: #424242;
+	line-height: 40px;
+	height: 40px;
+}
+.topbar-info .sep{
+	padding:  0 10px;
 }
