@@ -1,48 +1,73 @@
 body{
-	margin:0;
-    padding:0;
-    background-color: aliceblue;
+    /* 外边距 */
+    margin: 0;
+    /* 内边距 */
+    padding: 0;
 }
-.test1{
-    /* float: left; */
-    position: absolute;
-    background-color: rgb(32, 72, 190);
-    width: 100%;
-    font-size: 35px;
-}
-.test2{
-    position: relative;
+.daohanglan{
     float: left;
-    background-color: dimgray;
-    font-size: 30px;
-    width: 100px;
-    height: 922px;
-    margin-top: 40px;
+    background-color: #333333;
+    height: 40px;
+    width: 1920px;
+    margin-top: 0px;
 }
-.test1 .head {
-    	/* display: block; 设置为块元素 */
+.daohanglan a{
+    font-size: 30px;
+    /* 去掉链接下划线 */
+    text-decoration:none;
+    color: #fff;
+}
+.daohanglan a:hover{
+    color: red;
+}
+.daohanglan .head1{
+    float: left;
     display: block;
-    /* text-decoration: none;链接不显示下划线 */
-    text-decoration: none;
-	height: 40px;
-	line-height: 40px;
-	/* text-align: center; 文本居中 */
-	text-align: center;
-    width: 120px;
-    background-color: rgb(86, 135, 233);
-    margin-left: 100px;
-    font: bold;
+    width: 10%;
+    background-color: #424242;
+}
+.daohanglan .head1 b{
+    text-align: center;
+    margin-left: 25%;
+}
+.daohanglan .head2{
+    display: block;
+    float: left;
+    font-size: 20px;
+    margin-top: 5px;
+    margin-left: 10px;
+}
+.xiaoxi{
+    float: right;
+    text-align: center;
+    margin-right: 0px;
 }
 .xiaoxi a{
-    position: relative;
-    text-decoration: none;
-    float: right;
-    font-size: 10px;
-    color: azure;
-    text-align: center;
+    float: left;
+    font-size: 15px;
+	padding: 0 5px;
+	line-height: 40px;
+	height: 40px;
 }
-.xiaoxi a:hover{
-    /* background-color: aliceblue; */
-    color: aqua;
-
+.xiaoxi span{
+	float: left;
+	font-family: sans-serif;
+	font-size: 12px;
+	color: #424242;
+	line-height: 40px;
+	height: 40px;
+}
+.xiaoxi .zhanghu{
+    display: block;
+    width: 80px;
+    /* margin-right: 10px; */
+    background-color: aqua;
+}
+.liebiao{
+    float: left;
+    background-color:  #333333;
+    width: 10%;
+    height: 882px;
+    color: #fff;
+    font-size: 30px;
 }
