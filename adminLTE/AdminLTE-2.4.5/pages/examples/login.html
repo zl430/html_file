@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>AdminLTE 2 | Log in</title>
+  <title>OPS | Log in</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <!-- Bootstrap 3.3.7 -->
@@ -30,11 +30,32 @@
 <body class="hold-transition login-page">
 <div class="login-box">
   <div class="login-logo">
-    <a href="../../index2.html"><b>Admin</b>LTE</a>
+    <a href="../../index2.html"><b>OPS</b></a>
   </div>
   <!-- /.login-logo -->
   <div class="login-box-body">
     <p class="login-box-msg">Sign in to start your session</p>
+    <script>
+    function clickLoin() {
+            var yonghu = document.getElementById("username").value;//获取用户名
+            var mima = document.getElementById("password").value;//获取密码
+            var httpRequest = new XMLHttpRequest('127.0.0.1:66');
+            httpRequest.onreadystatechange = handleResponse;
+            var getloin ="username="+yonghu+"&&password="+mima;
+            httpRequest.open("post", "/login");
+            //以下这句在POST时要加上
+            httpRequest.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+            httpRequest.send(getloin);
+        }
+
+        function handleResponse(e) {
+            if (e.target.readyState == XMLHttpRequest.DONE){
+               // var responseTextJson = JSON.parse(e.target.responseText);
+
+                alert(e.target.responseText);
+            }
+        }
+    </script>
 
     <form action="../../index2.html" method="post">
       <div class="form-group has-feedback">
@@ -49,29 +70,20 @@
         <div class="col-xs-8">
           <div class="checkbox icheck">
             <label>
-              <input type="checkbox"> Remember Me
+              <input type="checkbox"> 记住密码
             </label>
           </div>
         </div>
-        <!-- /.col -->
+
         <div class="col-xs-4">
-          <button type="submit" class="btn btn-primary btn-block btn-flat">Sign In</button>
+          <button type="submit" class="btn btn-primary btn-block btn-flat">登录</button>
         </div>
-        <!-- /.col -->
+
       </div>
     </form>
 
-    <div class="social-auth-links text-center">
-      <p>- OR -</p>
-      <a href="#" class="btn btn-block btn-social btn-facebook btn-flat"><i class="fa fa-facebook"></i> Sign in using
-        Facebook</a>
-      <a href="#" class="btn btn-block btn-social btn-google btn-flat"><i class="fa fa-google-plus"></i> Sign in using
-        Google+</a>
-    </div>
-    <!-- /.social-auth-links -->
-
-    <a href="#">I forgot my password</a><br>
-    <a href="register.html" class="text-center">Register a new membership</a>
+    <a href="#">忘记密码</a><br>
+    <a href="register.html" class="text-center">注册新用户</a>
 
   </div>
   <!-- /.login-box-body -->
